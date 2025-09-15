@@ -828,8 +828,8 @@ html {
     
     /* Contact button styling for mobile */
     .contact-btn button {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.6rem;
     }
     
     /* ––––– Hero Section Mobile ––––– */
@@ -932,6 +932,10 @@ html {
     }
     
     /* ––––– Projects Section Mobile ––––– */
+    .project-section h1::after {
+        display: none;
+    }
+
     .project-section {
         width: 95%;
         padding: 2rem 1rem;
@@ -967,8 +971,8 @@ html {
     
     .overlay-buttons {
         display: flex;
-        
-        gap: 2rem;
+        white-space: nowrap;
+        justify-content: center;
     }
     
     .overlay-content .btn {
