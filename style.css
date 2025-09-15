@@ -503,7 +503,7 @@ button:hover .show-more-btn-overlay {
     /* Overlay buttons styling */
 .overlay-content .btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.2rem;
     background-color: #a3835f;
     color: white;
     text-decoration: none;
@@ -511,7 +511,7 @@ button:hover .show-more-btn-overlay {
     font-size: 0.9rem;
     font-weight: bold;
     transition: all 0.3s ease;
-    margin: 0 0.25rem;
+    margin-inline: 1.2rem;
 }
 
 .overlay-content .btn:hover {
