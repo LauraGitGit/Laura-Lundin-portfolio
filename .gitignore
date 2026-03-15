@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Optional: uncomment if you add Node.js later
+# node_modules/
+
+# Optional: uncomment if you add env files (e.g. for API keys)
+# .env
+# .env.local
