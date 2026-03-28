@@ -33,12 +33,10 @@ header {
   z-index: 1000;
 }
 
-/* Logo */
 .logo img {
   height: 50px;
 }
 
-/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -53,7 +51,6 @@ nav a {
   display: inline-block;
 }
 
-/* hover effect on nav bar */
 nav li:hover {
   color: #8e8a86;
   opacity: 0.7;
@@ -61,8 +58,8 @@ nav li:hover {
   transform: scale(1.3);
 }
 
-/* hover effect on all buttons */
-button:hover {
+button:hover,
+.btn-link:hover {
   transition: all 0.4s ease;
   transform: scale(0.95);
 }
@@ -80,13 +77,23 @@ button {
   cursor: pointer;
   padding: 0.8rem 1.2rem;
   box-shadow: 4px 7px 8px hsl(0deg 0% 0% / 0.38);
-}
-
-button a {
-  text-decoration: none;
   color: #fff;
   font-weight: bold;
   font-size: larger;
+  font-family: inherit;
+}
+
+.btn-link {
+  display: inline-block;
+  background-color: #a3835f;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0.8rem 1.2rem;
+  box-shadow: 4px 7px 8px hsl(0deg 0% 0% / 0.38);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 /*  ––––––– hero section ––––––– */
@@ -134,7 +141,6 @@ button a {
   letter-spacing: 1px;
 }
 
-/* home link line cross decoration  */
 li a[href="#hero"]::before {
   content: "";
   display: block;
@@ -162,7 +168,6 @@ li a[href="#hero"]::before {
   font-weight: 400;
 }
 
-/* name animation */
 .first-name p,
 .last-name p {
   animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -285,7 +290,6 @@ li a[href="#hero"]::before {
   box-shadow: 4px 7px 8px hsl(0deg 0% 0% / 0.38);
 }
 
-/* ––––––– why front end section ––––––– */
 .why-front-end-section {
   height: 55vh;
   margin: 6rem auto;
@@ -295,7 +299,6 @@ li a[href="#hero"]::before {
   animation-delay: 5s;
 }
 
-/* why front end section animation */
 @keyframes puff-in-center {
   0% {
     -webkit-transform: scale(2);
@@ -320,11 +323,11 @@ li a[href="#hero"]::before {
   flex-direction: column;
   align-items: center;
   margin: 6rem auto;
-  width: 80%;
-  padding: 4rem;
+  width: 72%;
+  max-width: 70rem;
+  padding: 3rem 2rem;
 }
 
-/* project section title animation with dots */
 .project-section h1::after,
 .show-more-btn-overlay::after {
   content: "...";
@@ -357,19 +360,46 @@ li a[href="#hero"]::before {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-  padding: 7rem;
+  column-gap: 8rem;
+  row-gap: 4rem;
+  padding: 4rem 1rem;
+  max-width: 53rem;
+  width: 100%;
+  margin-inline: auto;
   align-items: center;
   text-align: center;
 }
 
+.project-picture {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .project-picture img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   border-radius: 20px;
+}
+
+/* punkfrog logo fit contain */
+.project-picture--fit-contain {
+  background-color: #fff;
+}
+
+.project-picture--fit-contain img {
+  object-fit: contain;
+  object-position: center;
 }
 
 .project-name {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title::before {
@@ -395,9 +425,9 @@ li a[href="#hero"]::before {
   color: #595855e6;
   text-align: right;
   padding-right: 1rem;
+  align-items: center;
 }
 
-/* hover overlay effect on project picture */
 .project-picture,
 .overlay-content {
   position: relative;
@@ -412,7 +442,7 @@ li a[href="#hero"]::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.616);
+  background-color: rgba(0, 0, 0, 0.75);
   opacity: 0;
   transition: opacity 0.4s ease;
   z-index: 1;
@@ -423,14 +453,13 @@ li a[href="#hero"]::before {
   opacity: 1;
 }
 
-/* overlay content layer */
 .overlay-content {
   position: absolute;
   inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   text-align: center;
   color: #fff;
   opacity: 0;
@@ -460,11 +489,10 @@ li a[href="#hero"]::before {
   opacity: 0;
 }
 
-button:hover .show-more-btn-overlay {
+.show-more-btn:hover .show-more-btn-overlay {
   opacity: 1;
 }
 
-/* Overlay buttons styling */
 .overlay-content .btn {
   display: inline-block;
   padding: 0.5rem 1.2rem;
@@ -553,7 +581,6 @@ button:hover .show-more-btn-overlay {
   color: white;
 }
 
-/* left side footer styling */
 .left-footer {
   display: flex;
   flex-direction: column;
@@ -631,7 +658,6 @@ form {
   margin-top: 1rem;
 }
 
-/* Background video styling */
 .background-video {
   position: absolute;
   top: 0;
@@ -643,7 +669,6 @@ form {
   border-radius: 20px;
 }
 
-/* right side footer styling */
 .right-footer {
   display: flex;
   flex-direction: column;
@@ -675,14 +700,12 @@ form {
   -webkit-text-fill-color: #00000012;
 }
 
-/* Social and contact styling */
 .social-and-contact {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-/* Social icons styling */
 .social-icon {
   display: flex;
   gap: 2rem;
@@ -704,7 +727,6 @@ form {
   word-spacing: 0.6rem;
 }
 
-/* Back to Top Button */
 .back-to-top {
   position: fixed;
   bottom: 2rem;
@@ -731,7 +753,6 @@ form {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
-/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
@@ -748,12 +769,10 @@ html {
     box-sizing: border-box;
   }
 
-  /* Hide navigation menu on mobile */
   .nav-menu {
     display: none;
   }
 
-  /* Header adjustments - keep logo and contact button */
   header {
     padding: 1rem 2rem;
     width: 100%;
@@ -763,14 +782,12 @@ html {
     align-items: center;
   }
 
-  /* Logo styling for mobile */
   .logo img {
     height: 40px;
     width: auto;
   }
 
-  /* Contact button styling for mobile */
-  .contact-btn button {
+  .contact-btn .btn-link {
     padding: 0.5rem 0.7rem;
     font-size: 0.6rem;
   }
