@@ -360,7 +360,7 @@ li a[href="#hero"]::before {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 8rem;
+  column-gap: 10rem;
   row-gap: 4rem;
   padding: 4rem 1rem;
   max-width: 53rem;
