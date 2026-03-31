@@ -10,13 +10,13 @@
 
 <body id="top">
 
-    <!-- This is header section -->
+
     <header>
         <div class="logo">
             <a href="#hero"><img src="./Image/Logo.png" alt="logo"></a>
         </div>
 
-        <!-- nav bar section -->
+
         <nav class="nav-menu">
             <ul>
                 <li><a href="#hero">Home</a></li>
@@ -29,38 +29,59 @@
             </ul>
         </nav>
 
-        <!-- contact button -->
+
         <div class="contact-btn">
             <a href="#contact" class="btn-link">Contact me</a>
         </div>
 
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
     </header>
+
+    <!-- Mobile dropdown menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="https://github.com/LauraGitGit" target="_blank">Github</a></li>
+            <li><a href="#contact" class="btn-link mobile-contact-btn">Contact me</a></li>
+        </ul>
+    </div>
 
 
 
     <main>
-        <!-- This is hero section -->
+
         <section class="hero" id="hero">
             <div class="hero-content">
-                <!-- Star decoration -->
+
                 <div class="star-decoration">
                     <h1>✦</h1>
                 </div>
 
-                <!-- Top text -->
+
                 <div class="top-text">
                     <p>From</p>
                     <p>Surgical Nurse</p>
                     <p>To</p>
                 </div>
 
-                <!-- Divider lines -->
+                <!-- top divider lines -->
                 <div class="divider line">
                     <p>_______________</p>
                 </div>
 
 
-                <!-- Main name -->
+
 
                 <div class="first-name">
                     <p>Laura</p>
@@ -75,7 +96,7 @@
                     <p>_______________</p>
                 </div>
 
-                <!-- Side text -->
+
                 <div class="side-text">
                     <span>A Front-end Developer</span>
                 </div>
@@ -84,10 +105,10 @@
 
 
 
-        <!-- ——————————––—————————————————————————————————————————— -->
-        <!-- This is about me section -->
+
+
         <div class="about-me" id="about">
-            <!-- profile picture -->
+
             <div class="left-side">
                 <img src="./Image/CV photo 2.jpg" class="profile-picture" alt="Portrait of Laura Lundin">
             </div>
@@ -111,7 +132,7 @@
                         good fit, let's talk!
                     </p>
                 </section>
-                <!-- Resumé button -->
+
                 <a href="Image/Laura Lundin CV 2026.pdf" class="resume-btn btn-link" target="_blank"
                     rel="noopener noreferrer">Resumé</a>
             </section>
@@ -119,14 +140,12 @@
 
 
 
-        <!-- ——————————————————————————————————————————————————————— -->
-        <!-- My projects section-->
+
         <div class="project-section" id="project">
             <div>
                 <h1>Here's what I've done so far</h1>
             </div>
 
-            <!-- Project grid -->
             <div class="project-grid">
 
 
@@ -243,7 +262,7 @@
                 </div>
             </div>
 
-            <!-- Show more button -->
+
             <div class="show-more-btn">
                 <a href="https://github.com/LauraGitGit" class="btn-link" target="_blank"
                     rel="noopener noreferrer">Check
@@ -252,7 +271,7 @@
             </div>
         </div>
 
-        <!-- ——————————––———————   Experience & Achievements —————————————————————————————— -->
+
         <section class="experience-section" id="experience" aria-labelledby="experience-heading">
             <h1 id="experience-heading">
                 <span class="experience-title-line" aria-hidden="true"></span>
@@ -316,7 +335,7 @@
             </div>
         </section>
 
-        <!-- ——————————––—————————————————————————————————————————— -->
+
         <section class="skills-section" id="skills" aria-labelledby="skills-heading">
             <h1 id="skills-heading" class="skills-title">
                 <span class="skills-title-line" aria-hidden="true"></span>
@@ -361,7 +380,7 @@
             </div>
         </section>
 
-        <!-- ——————————––——  Education Section   ——————————————————————————————— -->
+
         <section class="education-section" id="education" aria-labelledby="education-heading">
             <h1 id="education-heading" class="education-title">
                 <span class="education-title-line" aria-hidden="true"></span>
@@ -391,8 +410,7 @@
             </div>
         </section>
 
-        <!-- ——————————––—————————————————————————————————————————— -->
-        <!-- This is reference section -->
+
         <div class="reference-section">
             <section class="reference-left">
                 <h1>–– Words From My Previous Boss</h1>
@@ -414,7 +432,7 @@
                         to perform under stress."</p>
                 </div>
 
-                <!-- Read more button -->
+
                 <a href="./Image/Reference Laura Lundin .pdf" class="read-more-btn btn-link" target="_blank"
                     rel="noopener noreferrer">Read More</a>
 
@@ -423,22 +441,21 @@
 
     </main>
 
-    <!-- ——————————––—————————————————————————————————————————— -->
-    <!-- This is footer section -->
+
 
 
 
     <footer class="footer" id="contact">
-        <!-- footerbackground video -->
+
         <div>
             <video class="background-video" src="./Image/background video.mp4" autoplay muted loop>
             </video>
         </div>
 
-        <!-- let's connect section -->
+
         <div class="left-footer">
             <div class="lets-connect">
-                <!-- 46e15f2b-5928-492e-a601-3e3e53716aaa -->
+
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="46e15f2b-5928-492e-a601-3e3e53716aaa">
 
@@ -458,7 +475,7 @@
                     <button type="submit" class="send-message-btn">Send Message</button>
                 </form>
             </div>
-            <!-- copyright -->
+
             <div class="copyright">
                 <p>© 2025 Laura Lundin</p>
             </div>
@@ -471,7 +488,7 @@
             </div>
 
             <div class="social-and-contact">
-                <!-- social icon -->
+
                 <div class="social-icon">
 
                     <a href="https://www.linkedin.com/in/lauralundin/" target="_blank"><img src="./Image/linkedin.png"
@@ -479,7 +496,7 @@
                     <a href="https://github.com/LauraGitGit" target="_blank"><img src="./Image/github.png"
                             alt="GitHub icon"></a>
                 </div>
-                <!-- contact information -->
+
                 <div class="contact-information">
                     <p>✆ +46(0)739541329</p><br>
                     <p>✉ im.laura.lundin@gmail.com</p>
@@ -490,11 +507,12 @@
 
     </footer>
 
-    <!-- Back to Top Button -->
+
     <a href="#top" class="back-to-top" aria-label="Back to top">
         ⬆
     </a>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>
